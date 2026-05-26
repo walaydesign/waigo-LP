@@ -27,14 +27,34 @@ var swiper = new Swiper(".gallery-swiper", {
 });
 
 $(".tool-tab-active").click(function () {
-    if ($(window).width() < 992) {
-        $(this).parents(".tool-tab").find(".nav-tabs").slideToggle(300).css("display","flex");
-    }
+  if ($(window).width() < 992) {
+    $(this)
+      .parents(".tool-tab")
+      .find(".nav-tabs")
+      .slideToggle(300)
+      .css("display", "flex");
+  }
 });
 $(".tool-tab .nav-link").click(function () {
-    if ($(window).width() < 992) {
-        $(this).parents(".nav-tabs").slideUp(300);
-        let text = $(this).text();
-        $(".tool-tab-active>p").text(text);
+  if ($(window).width() < 992) {
+    $(this).parents(".nav-tabs").slideUp(300);
+    let text = $(this).text();
+    $(".tool-tab-active>p").text(text);
+  }
+});
+
+$(".calculate-checkbox input").on("change", function () {
+  let monthlyPrice = 0;
+  let yearlyPrice = 0;
+  $(".calculate-wrapper input").each(function () {
+    if ($(this).is(":checked")) {
+      let price = parseInt(
+        $(this).parents(".calculate-checkbox").find(".price").text(),
+      );
+      monthlyPrice = monthlyPrice + price;
     }
+  });
+  yearlyPrice = monthlyPrice * 12;
+  $(".save-monthly").text(monthlyPrice);
+  $(".save-yearly").text(yearlyPrice);
 });

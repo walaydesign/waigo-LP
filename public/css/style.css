@@ -1144,7 +1144,8 @@ ul {
   .cards .title {
     margin-bottom: 16px;
   }
-  .cards .title, .cards .description {
+  .cards .title,
+  .cards .description {
     text-align: left;
   }
   .cards .row {
@@ -1353,7 +1354,8 @@ ul {
           transform: scale(1.2);
 }
 
-.tool-item:hover h3, .tool-item:hover p {
+.tool-item:hover h3,
+.tool-item:hover p {
   color: #168a82;
 }
 
@@ -1400,7 +1402,7 @@ ul {
 
 .compare-wrapper {
   border-radius: 24px;
-  background: linear-gradient(140deg, #0A3433 3.25%, #0A3433 64.31%, #188381 105.02%);
+  background: linear-gradient(140deg, #0a3433 3.25%, #0a3433 64.31%, #188381 105.02%);
   padding: 100px 60px;
   text-align: center;
   color: #fff;
@@ -1531,6 +1533,190 @@ ul {
   }
   .compare .btn {
     margin: 40px auto 0;
+  }
+}
+
+.calculate {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.calculate .title {
+  margin-bottom: 24px;
+}
+
+.calculate .description {
+  margin-bottom: 40px;
+}
+
+.calculate-wrapper {
+  border-radius: 40px;
+  padding: 40px;
+  background-color: #f7f9fc;
+}
+
+.calculate-wrapper .row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.calculate-wrapper .row > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calculate-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.calculate-checkbox__input {
+  width: 24px;
+  position: relative;
+}
+
+.calculate-checkbox__input input {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.calculate-checkbox__input input:checked + .checkmark {
+  background-color: #1ac9b6;
+  border-color: #1ac9b6;
+}
+
+.calculate-checkbox__input input:checked + .checkmark img {
+  opacity: 1;
+}
+
+.calculate-checkbox__input .checkmark {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #d6dde3;
+}
+
+.calculate-checkbox__input .checkmark img {
+  width: 16px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.calculate-checkbox__text {
+  width: calc(100% - 24px - 12px);
+  text-align: left;
+}
+
+.calculate-checkbox__text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.calculate-checkbox__text p {
+  font-size: 12px;
+  color: #a7b0b9;
+  margin: 0;
+}
+
+.calculate-result-item {
+  margin-bottom: 24px;
+  border-radius: 32px;
+  background-color: #fff;
+  padding: 40px 32px 28px;
+  text-align: left;
+}
+
+.calculate-result-item h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a7b0b9;
+}
+
+.calculate-result-item p {
+  font-size: 44px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #00332b;
+}
+
+.calculate-result-item.monthly p {
+  color: #1ac9b6;
+}
+
+@media screen and (max-width: 991px) {
+  .calculate-wrapper {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+  .calculate-wrapper .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .calculate-wrapper .row > div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .calculate-checkbox {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .calculate-checkbox__input {
+    width: 20px;
+    padding-top: 2px;
+  }
+  .calculate-checkbox__input input {
+    width: 20px;
+    height: 20px;
+  }
+  .calculate-checkbox__input .checkmark {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+  }
+  .calculate-checkbox__input .checkmark img {
+    width: 12px;
+  }
+  .calculate-checkbox__text {
+    width: calc(100% - 20px - 8px);
+  }
+  .calculate-checkbox__text h3 {
+    font-size: 14px;
+  }
+  .calculate-result {
+    margin-top: 24px;
+  }
+  .calculate-result-item {
+    margin-bottom: 20px;
+    border-radius: 24px;
+    padding: 24px 32px 16px;
+  }
+  .calculate-result-item p {
+    font-size: 40px;
+  }
+  .calculate-result-item.yearly {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
