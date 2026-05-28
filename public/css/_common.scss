@@ -44,6 +44,10 @@ $shadow-lg: 0 5px 35px rgba(26, 201, 182, 0.15);
 
 $nav-top-mobile: calc(100vh - 70px);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $text;
   font-family: "Noto Sans TC", sans-serif;
@@ -1202,6 +1206,7 @@ ul {
   &-inner {
     position: relative;
     padding: 0;
+    max-width: 1000px;
   }
   .beer-slider {
     width: 100%;
@@ -1302,7 +1307,7 @@ ul {
 }
 
 .calculate {
-  padding: 100px 0;
+  padding: 100px 0 0;
   text-align: center;
   .title {
     margin-bottom: 24px;
@@ -1460,7 +1465,7 @@ ul {
 }
 
 .evaluate {
-  padding-bottom: 100px;
+  padding: 100px 0;
   .row {
     margin-left: -30px;
     margin-right: -30px;
@@ -1579,6 +1584,125 @@ ul {
         }
         p {
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.cta {
+  padding-bottom: 100px;
+  &-wrapper {
+    border-radius: 40px;
+    box-shadow: $shadow-lg;
+    color: $white;
+    background-image: url(../img/cta.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      background: linear-gradient(to left, rgba(0,0,0,0.4) 0%, transparent 100%);
+      top: 0;
+      right: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h2 {
+      font-size: 40px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      margin-bottom: 20px;
+      font-weight: 700;
+      z-index: 1;
+      line-height: 1.5;
+      position: relative;
+    }
+    p {
+      margin-bottom: 40px;
+      color: rgba(255,255,255,0.9);
+      z-index: 1;
+      position: relative;
+    }
+    .btn {
+      background-color: $primary-500;
+      border-color: $primary-500;
+      z-index: 1;
+      position: relative;
+      .btn-icon {
+        &::before {
+          color: $white;
+        }
+      }
+      &:hover {
+        background-color: $primary-700;
+        border-color: $primary-700;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &-wrapper {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    &-wrapper {
+      padding: 40px 20px;
+      &::before {
+        background: rgba(0,0,0,0.4);
+      }
+      h2 {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $gradient;
+  padding: 20px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  text-align: center;
+  p {
+    margin-bottom: 12px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      display: block;
+      padding: 0 16px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: rgba(255,255,255,0.3);
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+    li {
+      &:last-child {
+        a {
+          &::after {
+            display: none;
+          }
         }
       }
     }

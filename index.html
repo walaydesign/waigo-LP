@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waigo AI</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,10 +29,10 @@
         <div class="header__func">
           <nav class="header__nav">
             <ul>
-              <li><a href="" class="active">為何選擇我們</a></li>
-              <li><a href="">解決方案</a></li>
-              <li><a href="">工具庫</a></li>
-              <li><a href="">用戶心得</a></li>
+              <li><a href="#why">為何選擇我們</a></li>
+              <li><a href="#solution">解決方案</a></li>
+              <li><a href="#toolstack">工具庫</a></li>
+              <li><a href="#feedback">用戶心得</a></li>
             </ul>
             <a href="" class="header__btn outline d-lg-none">登入</a>
           </nav>
@@ -160,7 +161,7 @@
           </div>
         </div>
       </div>
-      <div class="text-iconCards">
+      <div class="text-iconCards" id="why">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -221,7 +222,7 @@
           </div>
         </div>
       </div>
-      <div class="compare">
+      <div class="compare" id="solution">
         <div class="compare-wrapper">
           <h2 class="title">一個帳號，一站式解決所有創作難題</h2>
           <div class="compare-inner container">
@@ -326,7 +327,7 @@
           </a>
         </div>
       </div>
-      <div class="tool">
+      <div class="tool" id="toolstack">
         <div class="container">
           <h2 class="title">強大工具庫，應有盡有</h2>
           <p class="description">
@@ -884,7 +885,7 @@
           </div>
         </div>
       </div>
-      <div class="evaluate">
+      <div class="evaluate" id="feedback">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
@@ -932,7 +933,8 @@
                     <div class="swiper-slide">
                       <div class="testimonial-item">
                         <p class="testimonial-item__text">
-                          "繁體中文介面真的救了我，讓我能更精準地控制生成風格，這是我用過最順手的 AI 平台。"
+                          "繁體中文介面真的救了我，讓我能更精準地控制生成風格，這是我用過最順手的
+                          AI 平台。"
                         </p>
                         <div class="testimonial-person">
                           <div class="testimonial-person__text">
@@ -968,8 +970,34 @@
           </div>
         </div>
       </div>
+      <div class="cta">
+        <div class="container">
+          <div class="cta-wrapper">
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <h2>釋放你的創意潛能<br />就從今天開始</h2>
+                <p>
+                  加入 50,000+ 創作者的行列，體驗史上最簡單、最強大的 AI
+                  創作平台。
+                </p>
+                <a href="" class="btn btn-fill">
+                  <span class="btn-text">立即免費註冊</span>
+                  <span class="icon-rocket btn-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>© 2025 WEDO Studio Design. All Rights Reserved.</p>
+      <ul>
+        <li><a href="">隱私權政策</a></li>
+        <li><a href="">使用者條款</a></li>
+        <li><a href="">Cookie Settings</a></li>
+      </ul>
+    </footer>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -1008,15 +1036,15 @@
       });
     </script>
     <script>
-       var swiper = new Swiper(".testimonial-swiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          speed: 800,
-          autoplay: {
+      var swiper = new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 800,
+        autoplay: {
           delay: 3000,
           disableOnInteraction: false,
         },
-       })
+      });
     </script>
   </body>
 </html>
