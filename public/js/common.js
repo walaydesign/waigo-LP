@@ -1,3 +1,6 @@
+AOS.init({ startEvent: "load" });
+window.addEventListener("load", AOS.refresh);
+
 // menu
 $(".header__menu").click(function () {
   $(this).toggleClass("active");
