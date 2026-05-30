@@ -685,6 +685,7 @@ ul {
     transition: 0.3s;
     right: -450px;
     padding-top: 20px;
+    margin: 0;
   }
   .header__nav ul {
     display: block;
@@ -1206,6 +1207,7 @@ ul {
   background-color: #fff;
   border-radius: 32px;
   padding: 24px;
+  z-index: 1;
 }
 
 .tool-tab .nav-tabs {
@@ -1256,6 +1258,7 @@ ul {
           align-items: center;
   display: none;
   background-color: #fff;
+  z-index: 15;
 }
 
 .tool-tab-active p {
@@ -1374,6 +1377,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .tool-tab-wrap {
+    z-index: 5;
   }
   .tool-tab .nav-tabs {
     position: absolute;

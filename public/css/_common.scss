@@ -614,6 +614,7 @@ ul {
       transition: $transition;
       right: -450px;
       padding-top: 20px;
+      margin: 0;
       ul {
         display: block;
         a {
@@ -1030,6 +1031,7 @@ ul {
     background-color: $white;
     border-radius: 32px;
     padding: 24px;
+    z-index: 1;
     .nav-tabs {
       display: flex;
       flex-wrap: wrap;
@@ -1066,6 +1068,7 @@ ul {
       align-items: center;
       display: none;
       background-color: $white;
+      z-index: 15;
       p {
         width: calc(100% - 20px);
         padding-right: 16px;
@@ -1164,6 +1167,9 @@ ul {
       margin-bottom: 24px;
       &-active {
         display: flex;
+      }
+      &-wrap {
+        z-index: 5;
       }
       .nav-tabs {
         position: absolute;
