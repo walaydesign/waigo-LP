@@ -311,6 +311,13 @@ ul {
   }
 }
 
+.tag {
+  text-align: center;
+  color: $primary-500;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
 .text {
   font-size: 16px;
 }
@@ -1429,17 +1436,16 @@ ul {
       width: 250px;
       .compare-feat {
         &-head {
-          >span {
+          > span {
             &::before {
               color: $primary-600;
             }
           }
-      >svg {
-        path {
-          fill: $primary-500;
-        }
-      }
-
+          > svg {
+            path {
+              fill: $primary-500;
+            }
+          }
         }
         &-text {
           span {
@@ -1492,6 +1498,137 @@ ul {
     }
     .btn {
       margin: 40px auto 0;
+    }
+  }
+}
+
+.beforeafter {
+  padding-top: 100px;
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  &-cards {
+    width: calc(32% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-card {
+    padding: 28px 24px;
+    border-radius: 20px;
+    border: 1px solid $neutral-300;
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      img {
+        width: 28px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 900;
+        color: $primary-900;
+        margin: 0;
+      }
+    }
+    &-content {
+      .row {
+        margin-left: -16px;
+        margin-left: -16px;
+        > div {
+          padding-left: 16px;
+          padding-right: 16px;
+          border-right: 1px solid #EBEFF3;
+          &:last-child {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+  &-list {
+    > p {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    ul {
+      li {
+        position: relative;
+        padding-left: 24px;
+        font-size: 14px;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 16px;
+          height: 16px;
+          top: 3px;
+          left: 0;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    &.list {
+      &-before {
+        > p {
+          color: $neutral-500;
+        }
+        ul {
+          li {
+            color: $neutral-500;
+            &::before {
+              background-image: url(../img/cross.svg);
+            }
+          }
+        }
+      }
+      &-after {
+        > p {
+          color: $primary-700;
+          font-weight: 700;
+        }
+        ul {
+          li {
+            &::before {
+              background-image: url(../img/check-primary.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-hero {
+    width: 34%;
+    padding: 24px;
+    border-radius: 24px;
+    text-align: center;
+    background-image: url(../img/compare.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .title {
+      color: $white;
+      font-size: 32px;
+      margin-bottom: 4px;
+      &.before {
+        color: $neutral-500;
+      }
+      &.vs {
+        font-size: 18px;
+        color: $white;
+        padding: 4px 12px;
+        background-color: $primary-500;
+        border-radius: 12px;
+      }
+      &.after {
+        color: $primary-600;
+      }
+    }
+    .description {
+      margin-top: 16px;
     }
   }
 }
