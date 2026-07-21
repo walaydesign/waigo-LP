@@ -1681,6 +1681,9 @@ ul {
         }
       }
     }
+    &-arrow {
+      display: none;
+    }
     &-text {
       text-align: left;
       span {
@@ -1726,6 +1729,11 @@ ul {
       left: -3%;
       top: 66%;
     }
+  }
+  .btn {
+    margin: 40px auto 0;
+  }
+  @media screen and (min-width: 992px) {
     &:hover {
       background-color: $white;
       width: 250px;
@@ -1758,9 +1766,7 @@ ul {
         }
       }
     }
-  }
-  .btn {
-    margin: 40px auto 0;
+
   }
   @media screen and (max-width: 991px) {
     padding: 0;
@@ -1779,16 +1785,54 @@ ul {
       position: static;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       transform: none !important;
-      span {
+      max-width: inherit;
+      &-head {
+        cursor: pointer;
+      >span {
         font-size: 32px;
+      }
+      }
+      &-text {
+        br {
+          display: none;
+        }
+      }
+      &-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-left: auto;
+        transition: transform $transition;
+        &::before {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-right: 2px solid rgba(255, 255, 255, 0.7);
+          border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+          transform: rotate(45deg);
+          margin-top: -4px;
+        }
+      }
+      &.is-open {
+        .compare-feat-arrow {
+          transform: rotate(-180deg);
+        }
+        .compare-feat-content {
+          max-height: 300px;
+          padding-top: 16px;
+          margin-top: 16px;
+          opacity: 1;
+          color: $white;
+          border-top-color: rgba(255, 255, 255, 0.3);
+        }
       }
       &:hover {
         width: 100%;
         background-color: transparent;
-        .compare-feat-content {
-          color: $white;
-          border-top-color: rgba(255, 255, 255, 0.3);
-        }
       }
     }
     .btn {

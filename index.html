@@ -404,6 +404,7 @@
                   <span>好處二</span>
                   <p>一站式，<br />頂尖模型全在這</p>
                 </div>
+                <span class="compare-feat-arrow"></span>
               </div>
               <div class="compare-feat-content">
                 <p>
@@ -420,6 +421,7 @@
                   <span>好處一</span>
                   <p>用多少付多少</p>
                 </div>
+                <span class="compare-feat-arrow"></span>
               </div>
               <div class="compare-feat-content">
                 <p>
@@ -459,6 +461,7 @@
                   <span>好處三</span>
                   <p>靈感箱，照著做就好</p>
                 </div>
+                <span class="compare-feat-arrow"></span>
               </div>
               <div class="compare-feat-content">
                 <p>
@@ -2351,12 +2354,12 @@
     </script>
     <script>
       var toolSwiper = new Swiper(".tool-content-swiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         grid: {
-          rows: 3,
+          rows: 4,
           fill: "row",
         },
-        spaceBetween: 20,
+        spaceBetween: 16,
         navigation: {
           nextEl: ".tool-swiper-next",
           prevEl: ".tool-swiper-prev",
@@ -2364,6 +2367,16 @@
         pagination: {
           el: ".tool-swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            grid: {
+              rows: 3,
+              fill: "row",
+            },
+            spaceBetween: 20,
+          },
         },
       });
     </script>
@@ -2404,6 +2417,18 @@
 
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape") closeModal();
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        var mq = window.matchMedia("(max-width: 991px)");
+        document.querySelectorAll(".compare-feat-head").forEach(function (head) {
+          head.addEventListener("click", function () {
+            if (!mq.matches) return;
+            var feat = head.closest(".compare-feat");
+            feat.classList.toggle("is-open");
+          });
         });
       })();
     </script>
