@@ -61,3 +61,17 @@ $(".calculate-checkbox input").on("change", function () {
   $(".save-monthly").text(monthlyPrice);
   $(".save-yearly").text(yearlyPrice);
 });
+
+resize();
+$(window).on("resize scroll", function () {
+  resize();
+});
+
+function resize() {
+  // header
+  if ($(window).scrollTop() > 0) {
+    $(".header").addClass("scrolldown");
+  } else {
+    $(".header").removeClass("scrolldown");
+  }
+}

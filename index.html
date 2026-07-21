@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header scrolldown">
       <div class="container">
         <div class="header__main">
           <a href="./index.html" class="header__logo"
@@ -48,115 +48,274 @@
     </header>
     <main class="main">
       <div class="hero">
-        <img class="hero-img" src="./public/img/hero-img.png" data-aos="fade-left" />
+        <img
+          class="hero-img"
+          src="./public/img/hero-img.png"
+          data-aos="fade-left"
+        />
         <div class="hero-text">
           <div class="hero-text-wrapper" data-aos="fade-right">
             <h1 class="hero-title">
-              從零到專業創作
+              50+ 頂尖 AI 工具
               <br />
-              只需
-              <span class="hero-title-highlight">一個指令</span>
+              <span class="hero-title-highlight">一套點數，全部搞定</span>
             </h1>
             <h2 class="hero-subtitle">
-              Waigo AI 整合全球頂尖生成技術，不論是圖片、影片還是聲音，<br />
-              現在都能在同一個平台輕鬆實現。讓創意不再受限。
+              圖片、影片、配音、數字人——全球頂尖模型整合在同一個平台。<br />別再為一堆
+              AI 訂閱付月費，新手也能上手。
             </h2>
           </div>
-          <a href="" class="btn btn-fill">
-            <span class="btn-text">立即免費體驗</span>
-            <span class="icon-arrow-right btn-icon"></span>
-          </a>
+          <div class="d-flex align-items-center gap-4 flex-lg-row flex-column">
+            <a href="" class="btn btn-fill">
+              <span class="btn-text">免費開始創作</span>
+              <span class="icon-arrow-right btn-icon"></span>
+            </a>
+            <div class="hero-proof" data-aos="fade-right" data-aos-delay="200">
+              <div class="hero-proof-photos">
+                <div class="hero-proof-photos-item">
+                  <img src="./public/img/photo-1.jpg" alt="" />
+                </div>
+                <div class="hero-proof-photos-item">
+                  <img src="./public/img/photo-2.jpg" alt="" />
+                </div>
+                <div class="hero-proof-photos-item">
+                  <img src="./public/img/photo-3.jpg" alt="" />
+                </div>
+              </div>
+              <p>
+                已有 <span id="hero-user-count">0</span>+ 用戶<br />在 Waigo
+                上創作
+              </p>
+            </div>
+          </div>
+          <div class="hero-feat">
+            <div class="row">
+              <div class="col-4">
+                <div class="hero-feat-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <circle
+                        cx="307.003"
+                        cy="147.639"
+                        r="132.638"
+                        style="
+                          stroke-width: 30;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 10;
+                        "
+                        fill="none"
+                        stroke="#35bfb5"
+                        stroke-width="30"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="1"
+                        data-original="#000000"
+                        opacity="1"
+                      ></circle>
+                      <path
+                        d="M329.593 93.775c-3.804-2.844-16.035-10.385-33.232-5.204-19.204 5.785-23.973 32.061-10.923 42.297 7.493 5.877 18.768 10.71 33.964 16.081 34.01 12.022 21.438 59.984-13.158 60.215-13.501.09-19.812-.767-31.672-8.525M306.244 214.27v10.401M306.244 70.607v11.292M254.317 421.931h102.877v0-28.138c0-20.173-16.326-36.54-36.499-36.591l-46.849-.143-8.413-7.931c-33.61-31.682-83.278-37.995-123.363-16.943-8.039 4.222-16.956 6.501-26.036 6.501h-40.84v124.008h56.084l99.591 32.888a28.1 28.1 0 0 0 8.818 1.418h111.771a28.12 28.12 0 0 0 19.884-8.236L486.876 373.23c13.499-13.499 13.499-35.386 0-48.886h0c-13.499-13.499-35.386-13.499-48.886 0l-79.277 77.932"
+                        style="
+                          stroke-width: 30;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 10;
+                        "
+                        fill="none"
+                        stroke="#35bfb5"
+                        stroke-width="30"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="1"
+                        data-original="#000000"
+                        opacity="1"
+                      ></path>
+                      <path
+                        d="M15 324.213h60.194v152.296H15z"
+                        style="
+                          stroke-width: 30;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 10;
+                        "
+                        fill="none"
+                        stroke="#35bfb5"
+                        stroke-width="30"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="1"
+                        data-original="#000000"
+                        opacity="1"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>用多少付多少<br />不收月費</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="hero-feat-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 32 32"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M8.812 26.392c-1.651.948-3.512 1.288-4.614 1.41.122-1.102.462-2.963 1.409-4.615a.9.9 0 1 0-1.561-.896C2.35 25.249 2.33 28.627 2.33 28.77a.9.9 0 0 0 .9.9c.143 0 3.521-.02 6.479-1.716a.9.9 0 1 0-.897-1.562M30.909 3.275a2.13 2.13 0 0 0-.628-1.56c-.415-.415-1.015-.62-1.557-.625-2.492.047-9.214.762-15.574 6.471-1.134-.441-2.843-1.096-4.14-.929-1.908.245-4.727 2.841-7.488 5.611a1.47 1.47 0 0 0-.389 1.391c.122.506.492.903.988 1.062l4.39 1.41a41 41 0 0 0-.972 1.874 2.145 2.145 0 0 0 .418 2.449l5.613 5.613a2.15 2.15 0 0 0 2.45.419c.652-.315 1.27-.641 1.872-.971l1.411 4.389a1.47 1.47 0 0 0 1.416 1.031c.385 0 .756-.151 1.038-.432 2.77-2.761 5.366-5.579 5.61-7.486.169-1.309-.488-3.008-.929-4.142 5.708-6.36 6.424-13.082 6.471-15.575M3.168 13.143c1.465-1.459 4.647-4.542 6.071-4.725.635-.081 1.632.22 2.474.525-1.487 1.537-2.931 3.379-4.277 5.57zM13.237 24.84a.35.35 0 0 1-.394-.07l-5.614-5.614a.35.35 0 0 1-.069-.394C14.151 4.281 25.459 2.953 28.759 2.891h.008c.119 0 .197.053.243.099a.35.35 0 0 1 .101.252c-.064 3.3-1.393 14.608-15.874 21.598m10.345-2.078c-.183 1.423-3.266 4.606-4.725 6.07l-1.372-4.267c2.193-1.346 4.035-2.791 5.572-4.278.306.841.607 1.836.525 2.475"
+                        fill="#35bfb5"
+                        opacity="1"
+                        data-original="#000000"
+                      ></path>
+                      <path
+                        d="M24.128 13.214a3.783 3.783 0 0 0 0-5.342c-1.428-1.426-3.916-1.426-5.342 0-.713.713-1.106 1.662-1.106 2.671s.394 1.958 1.106 2.671 1.662 1.106 2.671 1.106 1.957-.393 2.671-1.106m-1.274-1.273c-.747.748-2.05.748-2.795 0-.374-.373-.58-.87-.58-1.398s.206-1.024.58-1.398a1.96 1.96 0 0 1 1.397-.579 1.978 1.978 0 0 1 1.398 3.375"
+                        fill="#35bfb5"
+                        opacity="1"
+                        data-original="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>免綁卡<br />先做做看再決定</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="hero-feat-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <g fill="#000">
+                        <path
+                          d="M5.512 2.097a.686.686 0 0 0-1.22.627l.462.898a.686.686 0 1 0 1.22-.627z"
+                          fill="#35bfb5"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          d="M6.822 5.483a2.4 2.4 0 0 0-1.133 3.2l3.39 7.111a3.83 3.83 0 0 0-3.91 1.186c-.835.964-.288 2.47.97 2.674l.046.007c.985.16 1.927.517 2.77 1.05l2.167 1.371a4.97 4.97 0 0 0 4.798.287l.265-.127a28 28 0 0 0 4.819-2.93 3.98 3.98 0 0 0 1.269-4.711L21.02 11.61a4.114 4.114 0 0 0-5-2.344l-3.637 1.114a.6.6 0 0 1-.718-.315l-1.644-3.449a2.4 2.4 0 0 0-3.199-1.133m.105 2.61a1.029 1.029 0 1 1 1.856-.886l1.645 3.448a1.97 1.97 0 0 0 2.356 1.036l3.638-1.114a2.743 2.743 0 0 1 3.333 1.563l1.253 2.99a2.61 2.61 0 0 1-.832 3.088 26.5 26.5 0 0 1-4.58 2.786l-.267.127a3.6 3.6 0 0 1-3.474-.208l-2.167-1.37a8.8 8.8 0 0 0-3.283-1.246l-.046-.007a.257.257 0 0 1-.154-.422 2.46 2.46 0 0 1 2.584-.74l.515.159c.9.278 1.702-.65 1.296-1.5z"
+                          clip-rule="evenodd"
+                          fill="#35bfb5"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                        <path
+                          d="M1.952 5.954a.686.686 0 0 1 .818-.52l.986.219a.686.686 0 1 1-.298 1.338l-.986-.22a.686.686 0 0 1-.52-.817M2.71 9.627a.686.686 0 1 0 .448 1.296l.955-.33a.686.686 0 1 0-.447-1.296zM9.867 2.18a.686.686 0 0 0-.92.308l-.45.904a.686.686 0 0 0 1.227.611l.45-.904a.686.686 0 0 0-.307-.92M12.243 5.082a.686.686 0 0 1 .725 1.163l-.857.535a.686.686 0 1 1-.725-1.164z"
+                          fill="#35bfb5"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p>Google, Line<br />一鍵登入</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="gallery">
-        <div class="container">
-          <div class="swiper-container gallery-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery-item">
-                  <img src="./public/img/galley-logo.png" alt="" />
-                </div>
-              </div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="gallery-item">
+              <img src="./public/img/brand-1.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-2.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-3.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-4.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-5.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-6.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-7.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-8.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-9.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-10.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-11.png" alt="" />
+            </div>
+            <!-- 複製一組，實現無縫循環 -->
+            <div class="gallery-item">
+              <img src="./public/img/brand-1.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-2.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-3.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-4.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-5.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-6.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-7.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-8.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-9.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-10.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-11.png" alt="" />
             </div>
           </div>
         </div>
@@ -174,12 +333,12 @@
               <div class="text-iconCards-content">
                 <div class="text-iconCards-text-wrapper">
                   <h2 class="title">
-                    為什麼<br class="d-lg-none" />以前 AI 創作很痛苦？
+                    為什麼以前用 AI 做內容，<br
+                      class="d-lg-block d-none"
+                    />這麼累？
                   </h2>
                   <p class="description">
-                    創意的實現應該是純粹的，<br
-                      class="d-lg-none"
-                    />而不該被繁瑣的工具與高昂的成本所阻礙。
+                    做內容本來該很單純。累的不是創意，是工具跟帳單。
                   </p>
                 </div>
                 <div class="text-iconCards-wrapper">
@@ -188,9 +347,9 @@
                       <span class="icon-transform"></span>
                     </div>
                     <div class="card-icon-text">
-                      <h3 class="card-icon-title">工具切換太疲憊</h3>
+                      <h3 class="card-icon-title">工具切來切去</h3>
                       <div class="card-icon-description">
-                        為了生圖去A網站，做影片去B網站，反覆跳轉浪費大量時間。
+                        生圖去 A 站、做影片去 B 站、配音去 C 站，<br />光切換登入就耗掉半天。
                       </div>
                     </div>
                   </div>
@@ -201,7 +360,7 @@
                     <div class="card-icon-text">
                       <h3 class="card-icon-title">訂閱帳單接不完</h3>
                       <div class="card-icon-description">
-                        每個AI工具都要付月費，加總起來是一筆驚人的固定開銷。
+                        每個 AI 工具都要月費，<br />一個一個加起來，每月固定噴一大筆。
                       </div>
                     </div>
                   </div>
@@ -210,9 +369,9 @@
                       <span class="icon-layout"></span>
                     </div>
                     <div class="card-icon-text">
-                      <h3 class="card-icon-title">操作介面太複雜</h3>
+                      <h3 class="card-icon-title">不知道從何開始</h3>
                       <div class="card-icon-description">
-                        全英文介面、各種艱深參數，光是學習如何使用就已經筋疲力盡。
+                        介面全英文、參數一堆，<br />連「該做什麼、怎麼做」都沒頭緒。
                       </div>
                     </div>
                   </div>
@@ -224,7 +383,7 @@
       </div>
       <div class="compare" id="solution">
         <div class="compare-wrapper">
-          <h2 class="title">一個帳號，一站式解決所有創作難題</h2>
+          <h2 class="title">一個帳號，解決所有麻煩</h2>
           <div class="compare-inner container" data-aos="fade-up">
             <div id="beer-slider" class="beer-slider" data-beer-label="before">
               <img
@@ -239,20 +398,75 @@
               </div>
             </div>
             <div class="compare-feat compare-feat--1">
-              <span class="icon-variable"></span>
-              <p>專家級預設參數</p>
-            </div>
-            <div class="compare-feat compare-feat--2">
-              <span class="icon-integrate"></span>
-              <p>單一平台整合</p>
-            </div>
-            <div class="compare-feat compare-feat--3">
-              <span class="icon-token"></span>
-              <p>通用點數系統</p>
+              <div class="compare-feat-head">
+                <span class="icon-integrate"></span>
+                <div class="compare-feat-text">
+                  <span>好處二</span>
+                  <p>一站式，<br />頂尖模型全在這</p>
+                </div>
+              </div>
+              <div class="compare-feat-content">
+                <p>
+                  不綁月費、不收訂閱。
+                  想用才付、用多少算多少——做一張圖、剪一支片，花的就是那一點點點數。
+                  對抓預算的老闆來說，這才是真正省錢的方式。
+                </p>
+              </div>
             </div>
             <div class="compare-feat compare-feat--4">
-              <span class="icon-language"></span>
-              <p>全繁體中文介面</p>
+              <div class="compare-feat-head">
+                <span class="icon-token"></span>
+                <div class="compare-feat-text">
+                  <span>好處一</span>
+                  <p>用多少付多少</p>
+                </div>
+              </div>
+              <div class="compare-feat-content">
+                <p>
+                  全球最強的圖片、影片、語音、數字人模型，集中在同一個平台。
+                  不用再為了不同需求到處跳網站、各開各的帳號。
+                  一個帳號、一套點數，全部用得到。
+                </p>
+              </div>
+            </div>
+            <div class="compare-feat compare-feat--3">
+              <div class="compare-feat-head">
+                <svg
+                  id="_圖層_1"
+                  data-name="圖層_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 512 508.8"
+                >
+                  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+                  <defs>
+                    <style>
+                      .st0 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <path
+                    class="st0"
+                    d="M510,272.5l-52.9-92.3s0,0,0-.1c-.2-.4-.4-.7-.7-1.1,0-.1-.2-.3-.3-.4-.2-.2-.3-.5-.5-.7-.1-.2-.3-.3-.4-.4-.2-.2-.4-.4-.5-.6-.2-.1-.3-.3-.5-.4-.2-.2-.4-.3-.6-.5-.2-.1-.3-.3-.5-.4-.2-.1-.4-.3-.6-.4-.2-.1-.4-.2-.5-.3-.2-.1-.5-.3-.7-.4-.2,0-.3-.2-.5-.3-.3-.1-.6-.3-.9-.4-.1,0-.2-.1-.3-.1l-96.3-36.4c3.8-10.7,5.9-22.3,5.9-34.3,0-56.8-46.2-103-103-103s-103,46.2-103,103,2.2,24.4,6.3,35.4l-96.6,35.2s0,0,0,0c-.4.2-.9.3-1.3.5-.2,0-.3.2-.5.3-.2.1-.5.3-.7.4-.2.1-.4.2-.6.4-.2.1-.4.3-.6.4-.2.1-.4.3-.5.4-.2.1-.4.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.4-.4.6-.1.2-.3.4-.4.5-.1.2-.3.4-.4.6-.1.2-.2.4-.4.6,0,0,0,0,0,0L2,272.5c-2.2,3.8-2.6,8.3-1.1,12.5s4.6,7.4,8.7,9l43.3,16.8v114.7c0,6.3,4,12,9.9,14.1l188.2,67.8c1.2.6,2.5,1,3.8,1.2.9.2,1.8.2,2.7.2s0,0,.1,0c0,0,0,0,0,0,1.7,0,3.4-.3,5.1-.9l189.8-68.3c6-2.1,9.9-7.8,9.9-14.1v-116l40-15.5c4.1-1.6,7.3-4.9,8.7-9s1-8.7-1.1-12.5ZM256,30c40.2,0,73,32.7,73,73s-32.7,73-73,73-48.8-13.7-61.7-34.2c0,0,0,0,0-.1-.6-1.7-1.6-3.3-2.7-4.6-5.4-10.2-8.5-21.7-8.5-34,0-40.2,32.7-73,73-73ZM256,205.9c34,0,64.1-16.5,82.9-42l62.3,23.5-143.8,52.9-145.6-52.8,62.1-22.6c18.8,24.8,48.6,40.9,82.1,40.9ZM74.6,206l160.8,58.3-40.3,69.4-158.4-61.5,37.9-66.2ZM82.9,322.4l113.3,44c6.9,2.7,14.7,0,18.4-6.4l27.8-47.9v160.3l-159.5-57.5v-92.5ZM432.4,414.9l-149.6,53.9,39.3-104.8,110.3-42.8v93.8ZM442.7,284.9c-.5.2-1,.3-1.4.6l-136.3,52.9c-4,1.5-7.1,4.7-8.6,8.7l-23.9,63.8v-144.2l165-60.7,37.9,66.2-32.6,12.7Z"
+                  />
+                  <path
+                    class="st0"
+                    d="M232.5,137.8c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4l45.4-45.4c5.9-5.9,5.9-15.4,0-21.2-5.9-5.9-15.4-5.9-21.2,0l-34.8,34.8-8.5-8.5c-5.9-5.9-15.4-5.9-21.2,0-5.9,5.9-5.9,15.4,0,21.2l19.1,19.1Z"
+                  />
+                </svg>
+                <div class="compare-feat-text">
+                  <span>好處三</span>
+                  <p>靈感箱，照著做就好</p>
+                </div>
+              </div>
+              <div class="compare-feat-content">
+                <p>
+                  不知道要做什麼？打開「靈感箱」，裡面有大量現成範例。
+                  看到喜歡的，直接套用、改成你要的，新手也能立刻產出專業成果。
+                  不用從一張白紙開始。
+                </p>
+              </div>
             </div>
           </div>
           <a href="" class="btn btn-fill btn-fill-white">
@@ -282,7 +496,12 @@
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="100">
+              <a
+                href=""
+                class="cards_item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="cards_pic">
                   <img src="./public/img/card-img-2.png" alt="" />
                 </div>
@@ -295,7 +514,12 @@
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="200">
+              <a
+                href=""
+                class="cards_item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div class="cards_pic">
                   <img src="./public/img/card-img-3.png" alt="" />
                 </div>
@@ -308,7 +532,12 @@
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="100">
+              <a
+                href=""
+                class="cards_item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="cards_pic">
                   <img src="./public/img/card-img-4.png" alt="" />
                 </div>
@@ -1009,6 +1238,21 @@
     <script src="./public/js/common.js"></script>
     <script>
       var slider = new BeerSlider(document.getElementById("beer-slider"));
+    </script>
+    <script>
+      new Waypoint({
+        element: document.querySelector(".hero"),
+        handler: function () {
+          var heroCount = new countUp.CountUp("hero-user-count", 50000, {
+            startVal: 0,
+            duration: 2.5,
+            separator: ",",
+          });
+          heroCount.start();
+          this.destroy();
+        },
+        offset: "80%",
+      });
     </script>
     <script>
       var options1 = {
