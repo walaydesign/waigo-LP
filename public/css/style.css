@@ -2089,23 +2089,23 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-  .compare:hover {
+  .compare-feat:hover {
     background-color: #fff;
     width: 250px;
   }
-  .compare:hover .compare-feat-head > span::before {
+  .compare-feat:hover .compare-feat-head > span::before {
     color: #19a299;
   }
-  .compare:hover .compare-feat-head > svg path {
+  .compare-feat:hover .compare-feat-head > svg path {
     fill: #35bfb5;
   }
-  .compare:hover .compare-feat-text span {
+  .compare-feat:hover .compare-feat-text span {
     color: #767f87;
   }
-  .compare:hover .compare-feat-text p {
+  .compare-feat:hover .compare-feat-text p {
     color: #19a299;
   }
-  .compare:hover .compare-feat-content {
+  .compare-feat:hover .compare-feat-content {
     max-height: 300px;
     padding-top: 16px;
     margin-top: 16px;

@@ -1734,6 +1734,7 @@ ul {
     margin: 40px auto 0;
   }
   @media screen and (min-width: 992px) {
+    &-feat {
     &:hover {
       background-color: $white;
       width: 250px;
@@ -1765,6 +1766,8 @@ ul {
           opacity: 1;
         }
       }
+    }
+
     }
 
   }
