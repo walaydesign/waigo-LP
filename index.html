@@ -1,10 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waigo AI</title>
     <link rel="shortcut icon" href="favicon.ico" />
+    <meta
+      property="og:description"
+      content="100+ 頂尖 AI 工具，一套點數，全部搞定"
+    />
+    <meta property="og:image" content="./public/img/thumbnail.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,10 +34,12 @@
         <div class="header__func">
           <nav class="header__nav">
             <ul>
-              <li><a href="#why">為何選擇我們</a></li>
-              <li><a href="#solution">解決方案</a></li>
-              <li><a href="#toolstack">工具庫</a></li>
-              <li><a href="#feedback">用戶心得</a></li>
+              <li><a href="https://waigo.ai/tools">AI工具集</a></li>
+              <li><a href="https://waigo.ai/inspiration">靈感廣場</a></li>
+              <li><a href="https://waigo.ai/showcase">商用案例</a></li>
+              <li><a href="https://waigo.ai/creation-engine">創意引擎</a></li>
+              <li><a href="#">AI 學院</a></li>
+              <li><a href="#">使用攻略</a></li>
             </ul>
             <a href="" class="header__btn outline d-lg-none">登入</a>
           </nav>
@@ -48,49 +55,87 @@
     </header>
     <main class="main">
       <div class="hero">
-        <img
-          class="hero-img"
-          src="./public/img/hero-img.png"
-          data-aos="fade-left"
-        />
+        <div class="hero-video hero-video-swiper swiper" data-aos="fade-left">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted playsinline preload="metadata">
+                <source src="./public/img/example.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="hero-video-pagination"></div>
+          <!-- <button class="hero-video-mute" aria-label="靜音／開啟聲音">
+            <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+            <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+          </button> -->
+        </div>
         <div class="hero-text">
           <div class="hero-text-wrapper" data-aos="fade-right">
             <h1 class="hero-title">
-              50+ 頂尖 AI 工具
+              100+ 頂尖 AI 工具
               <br />
               <span class="hero-title-highlight">一套點數，全部搞定</span>
             </h1>
             <h2 class="hero-subtitle">
-              圖片、影片、配音、數字人——全球頂尖模型整合在同一個平台。<br />別再為一堆
-              AI 訂閱付月費，新手也能上手。
+              圖片、影片、配音、數位人——全球最強的模型集中在同一個平台。<br />
+              不收月費，用多少付多少，點數永不過期，不會自動扣款。
             </h2>
           </div>
-          <div class="d-flex align-items-center gap-4 flex-lg-row flex-column">
+          <div class="hero-proof" data-aos="fade-right" data-aos-delay="200">
+            <div class="hero-proof-photos">
+              <div class="hero-proof-photos-item">
+                <img src="./public/img/photo-1.jpg" alt="" />
+              </div>
+              <div class="hero-proof-photos-item">
+                <img src="./public/img/photo-2.jpg" alt="" />
+              </div>
+              <div class="hero-proof-photos-item">
+                <img src="./public/img/photo-3.jpg" alt="" />
+              </div>
+            </div>
+            <p>
+              已有 <span id="hero-user-count">0</span>+ 用戶<br />在 Waigo
+              上創作
+            </p>
+          </div>
+          <div class="hero-cta d-flex align-items-center gap-lg-4 gap-3">
             <a href="" class="btn btn-fill">
               <span class="btn-text">免費開始創作</span>
               <span class="icon-arrow-right btn-icon"></span>
             </a>
-            <div class="hero-proof" data-aos="fade-right" data-aos-delay="200">
-              <div class="hero-proof-photos">
-                <div class="hero-proof-photos-item">
-                  <img src="./public/img/photo-1.jpg" alt="" />
-                </div>
-                <div class="hero-proof-photos-item">
-                  <img src="./public/img/photo-2.jpg" alt="" />
-                </div>
-                <div class="hero-proof-photos-item">
-                  <img src="./public/img/photo-3.jpg" alt="" />
-                </div>
-              </div>
-              <p>
-                已有 <span id="hero-user-count">0</span>+ 用戶<br />在 Waigo
-                上創作
-              </p>
-            </div>
+            <a href="" class="btn btn-border">
+              <span class="btn-text">看看別人做了什麼</span>
+              <span class="icon-arrow-right btn-icon"></span>
+            </a>
           </div>
           <div class="hero-feat">
             <div class="row">
-              <div class="col-4">
+              <div class="col-3">
                 <div class="hero-feat-item">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -161,10 +206,10 @@
                       ></path>
                     </g>
                   </svg>
-                  <p>用多少付多少<br />不收月費</p>
+                  <p>不收月費<br />用多少付多少</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <div class="hero-feat-item">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,10 +239,10 @@
                       ></path>
                     </g>
                   </svg>
-                  <p>免綁卡<br />先做做看再決定</p>
+                  <p>免綁卡<br />先做做看</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <div class="hero-feat-item">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +285,25 @@
                       </g>
                     </g>
                   </svg>
-                  <p>Google, Line<br />一鍵登入</p>
+                  <p>Google／LINE<br />一鍵登入</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="hero-feat-item">
+                  <svg
+                    id="fi_7955802"
+                    height="512"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="calendar-check"
+                      d="m18 3.75h-1.25v-.75a.75.75 0 0 0 -1.5 0v.75h-6.5v-.75a.75.75 0 0 0 -1.5 0v.75h-1.25a3.383 3.383 0 0 0 -3.75 3.75v10.5a3.383 3.383 0 0 0 3.75 3.75h12a3.383 3.383 0 0 0 3.75-3.75v-10.5a3.383 3.383 0 0 0 -3.75-3.75zm-12 1.5h1.25v.75a.75.75 0 0 0 1.5 0v-.75h6.5v.75a.75.75 0 0 0 1.5 0v-.75h1.25c1.577 0 2.25.673 2.25 2.25v.75h-16.5v-.75c0-1.577.673-2.25 2.25-2.25zm12 15h-12c-1.577 0-2.25-.673-2.25-2.25v-8.25h16.5v8.25c0 1.577-.673 2.25-2.25 2.25zm-2.97-7.45a.75.75 0 0 1 0 1.061l-3.33 3.339a.748.748 0 0 1 -1.06 0l-1.67-1.67a.75.75 0 0 1 1.06-1.06l1.137 1.136 2.8-2.8a.749.749 0 0 1 1.063-.006z"
+                      fill="#35bfb5"
+                    ></path>
+                  </svg>
+                  <p>點數永不過期</p>
                 </div>
               </div>
             </div>
@@ -248,6 +311,7 @@
         </div>
       </div>
       <div class="gallery">
+        <h2 class="gallery-title">全球頂尖模型，每週上新</h2>
         <div class="marquee">
           <div class="marquee-track">
             <div class="gallery-item">
@@ -257,9 +321,6 @@
               <img src="./public/img/brand-2.png" alt="" />
             </div>
             <div class="gallery-item">
-              <img src="./public/img/brand-3.png" alt="" />
-            </div>
-            <div class="gallery-item">
               <img src="./public/img/brand-4.png" alt="" />
             </div>
             <div class="gallery-item">
@@ -281,7 +342,34 @@
               <img src="./public/img/brand-10.png" alt="" />
             </div>
             <div class="gallery-item">
-              <img src="./public/img/brand-11.png" alt="" />
+              <img src="./public/img/brand-12.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-13.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-14.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-15.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-16.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-17.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-18.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-19.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-20.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-21.png" alt="" />
             </div>
             <!-- 複製一組，實現無縫循環 -->
             <div class="gallery-item">
@@ -291,9 +379,6 @@
               <img src="./public/img/brand-2.png" alt="" />
             </div>
             <div class="gallery-item">
-              <img src="./public/img/brand-3.png" alt="" />
-            </div>
-            <div class="gallery-item">
               <img src="./public/img/brand-4.png" alt="" />
             </div>
             <div class="gallery-item">
@@ -315,7 +400,34 @@
               <img src="./public/img/brand-10.png" alt="" />
             </div>
             <div class="gallery-item">
-              <img src="./public/img/brand-11.png" alt="" />
+              <img src="./public/img/brand-12.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-13.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-14.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-15.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-16.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-17.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-18.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-19.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-20.png" alt="" />
+            </div>
+            <div class="gallery-item">
+              <img src="./public/img/brand-21.png" alt="" />
             </div>
           </div>
         </div>
@@ -323,55 +435,57 @@
       <div class="text-iconCards" id="why">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6" data-aos="fade-right">
-              <img
-                class="text-iconCards-img"
-                src="./public/img/painpoint.png"
-              />
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-              <div class="text-iconCards-content">
+            <div class="col-lg-3">
+              <div class="text-iconCards-wrapper">
                 <div class="text-iconCards-text-wrapper">
-                  <h2 class="title">
-                    為什麼以前用 AI 做內容，<br
-                      class="d-lg-block d-none"
-                    />這麼累？
-                  </h2>
+                  <h2 class="title">為什麼以前用 AI 做內容，這麼累？</h2>
                   <p class="description">
                     做內容本來該很單純。累的不是創意，是工具跟帳單。
                   </p>
                 </div>
-                <div class="text-iconCards-wrapper">
-                  <div class="card-icon">
-                    <div class="card-icon-icon">
-                      <span class="icon-transform"></span>
-                    </div>
-                    <div class="card-icon-text">
-                      <h3 class="card-icon-title">工具切來切去</h3>
-                      <div class="card-icon-description">
-                        生圖去 A 站、做影片去 B 站、配音去 C 站，<br />光切換登入就耗掉半天。
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="text-iconCards-wrapper">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card-icon">
+                      <div class="card-icon-icon">
+                        <span class="icon-transform"></span>
+                      </div>
+                      <div class="card-icon-text">
+                        <h3 class="card-icon-title">工具切來切去</h3>
+                        <div class="card-icon-description">
+                          生圖去 A 站、做影片去 B 站、配音去 C
+                          站，光切換登入就耗掉半天。
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-icon">
-                    <div class="card-icon-icon">
-                      <span class="icon-signature"></span>
-                    </div>
-                    <div class="card-icon-text">
-                      <h3 class="card-icon-title">訂閱帳單接不完</h3>
-                      <div class="card-icon-description">
-                        每個 AI 工具都要月費，<br />一個一個加起來，每月固定噴一大筆。
+                  <div class="col-lg-4">
+                    <div class="card-icon">
+                      <div class="card-icon-icon">
+                        <span class="icon-signature"></span>
+                      </div>
+                      <div class="card-icon-text">
+                        <h3 class="card-icon-title">訂閱帳單接不完</h3>
+                        <div class="card-icon-description">
+                          每個 AI
+                          工具都要月費，一個一個加起來，每月固定噴一大筆。
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-icon">
-                    <div class="card-icon-icon">
-                      <span class="icon-layout"></span>
-                    </div>
-                    <div class="card-icon-text">
-                      <h3 class="card-icon-title">不知道從何開始</h3>
-                      <div class="card-icon-description">
-                        介面全英文、參數一堆，<br />連「該做什麼、怎麼做」都沒頭緒。
+                  <div class="col-lg-4">
+                    <div class="card-icon">
+                      <div class="card-icon-icon">
+                        <span class="icon-layout"></span>
+                      </div>
+                      <div class="card-icon-text">
+                        <h3 class="card-icon-title">不知道從何開始</h3>
+                        <div class="card-icon-description">
+                          介面全英文、參數一堆，連「該做什麼、怎麼做」都沒頭緒。
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -379,108 +493,15 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="compare" id="solution">
-        <div class="compare-wrapper">
-          <h2 class="title">一個帳號，解決所有麻煩</h2>
-          <div class="compare-inner container" data-aos="fade-up">
-            <div id="beer-slider" class="beer-slider" data-beer-label="before">
-              <img
-                src="./public/img/man-hold-beer.jpg"
-                alt="Original - Man holding beer"
-              />
-              <div class="beer-reveal" data-beer-label="after">
-                <img
-                  src="./public/img/man-hold-beer-after1logo.jpg"
-                  alt="Processed - Man holding beer"
-                />
-              </div>
-            </div>
-            <div class="compare-feat compare-feat--1">
-              <div class="compare-feat-head">
-                <span class="icon-integrate"></span>
-                <div class="compare-feat-text">
-                  <span>好處二</span>
-                  <p>一站式，<br />頂尖模型全在這</p>
-                </div>
-                <span class="compare-feat-arrow"></span>
-              </div>
-              <div class="compare-feat-content">
-                <p>
-                  不綁月費、不收訂閱。
-                  想用才付、用多少算多少——做一張圖、剪一支片，花的就是那一點點點數。
-                  對抓預算的老闆來說，這才是真正省錢的方式。
-                </p>
-              </div>
-            </div>
-            <div class="compare-feat compare-feat--4">
-              <div class="compare-feat-head">
-                <span class="icon-token"></span>
-                <div class="compare-feat-text">
-                  <span>好處一</span>
-                  <p>用多少付多少</p>
-                </div>
-                <span class="compare-feat-arrow"></span>
-              </div>
-              <div class="compare-feat-content">
-                <p>
-                  全球最強的圖片、影片、語音、數字人模型，集中在同一個平台。
-                  不用再為了不同需求到處跳網站、各開各的帳號。
-                  一個帳號、一套點數，全部用得到。
-                </p>
-              </div>
-            </div>
-            <div class="compare-feat compare-feat--3">
-              <div class="compare-feat-head">
-                <svg
-                  id="_圖層_1"
-                  data-name="圖層_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  viewBox="0 0 512 508.8"
-                >
-                  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
-                  <defs>
-                    <style>
-                      .st0 {
-                        fill: #fff;
-                      }
-                    </style>
-                  </defs>
-                  <path
-                    class="st0"
-                    d="M510,272.5l-52.9-92.3s0,0,0-.1c-.2-.4-.4-.7-.7-1.1,0-.1-.2-.3-.3-.4-.2-.2-.3-.5-.5-.7-.1-.2-.3-.3-.4-.4-.2-.2-.4-.4-.5-.6-.2-.1-.3-.3-.5-.4-.2-.2-.4-.3-.6-.5-.2-.1-.3-.3-.5-.4-.2-.1-.4-.3-.6-.4-.2-.1-.4-.2-.5-.3-.2-.1-.5-.3-.7-.4-.2,0-.3-.2-.5-.3-.3-.1-.6-.3-.9-.4-.1,0-.2-.1-.3-.1l-96.3-36.4c3.8-10.7,5.9-22.3,5.9-34.3,0-56.8-46.2-103-103-103s-103,46.2-103,103,2.2,24.4,6.3,35.4l-96.6,35.2s0,0,0,0c-.4.2-.9.3-1.3.5-.2,0-.3.2-.5.3-.2.1-.5.3-.7.4-.2.1-.4.2-.6.4-.2.1-.4.3-.6.4-.2.1-.4.3-.5.4-.2.1-.4.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.3-.5.5-.2.2-.3.4-.4.6-.1.2-.3.4-.4.5-.1.2-.3.4-.4.6-.1.2-.2.4-.4.6,0,0,0,0,0,0L2,272.5c-2.2,3.8-2.6,8.3-1.1,12.5s4.6,7.4,8.7,9l43.3,16.8v114.7c0,6.3,4,12,9.9,14.1l188.2,67.8c1.2.6,2.5,1,3.8,1.2.9.2,1.8.2,2.7.2s0,0,.1,0c0,0,0,0,0,0,1.7,0,3.4-.3,5.1-.9l189.8-68.3c6-2.1,9.9-7.8,9.9-14.1v-116l40-15.5c4.1-1.6,7.3-4.9,8.7-9s1-8.7-1.1-12.5ZM256,30c40.2,0,73,32.7,73,73s-32.7,73-73,73-48.8-13.7-61.7-34.2c0,0,0,0,0-.1-.6-1.7-1.6-3.3-2.7-4.6-5.4-10.2-8.5-21.7-8.5-34,0-40.2,32.7-73,73-73ZM256,205.9c34,0,64.1-16.5,82.9-42l62.3,23.5-143.8,52.9-145.6-52.8,62.1-22.6c18.8,24.8,48.6,40.9,82.1,40.9ZM74.6,206l160.8,58.3-40.3,69.4-158.4-61.5,37.9-66.2ZM82.9,322.4l113.3,44c6.9,2.7,14.7,0,18.4-6.4l27.8-47.9v160.3l-159.5-57.5v-92.5ZM432.4,414.9l-149.6,53.9,39.3-104.8,110.3-42.8v93.8ZM442.7,284.9c-.5.2-1,.3-1.4.6l-136.3,52.9c-4,1.5-7.1,4.7-8.6,8.7l-23.9,63.8v-144.2l165-60.7,37.9,66.2-32.6,12.7Z"
-                  />
-                  <path
-                    class="st0"
-                    d="M232.5,137.8c2.9,2.9,6.8,4.4,10.6,4.4s7.7-1.5,10.6-4.4l45.4-45.4c5.9-5.9,5.9-15.4,0-21.2-5.9-5.9-15.4-5.9-21.2,0l-34.8,34.8-8.5-8.5c-5.9-5.9-15.4-5.9-21.2,0-5.9,5.9-5.9,15.4,0,21.2l19.1,19.1Z"
-                  />
-                </svg>
-                <div class="compare-feat-text">
-                  <span>好處三</span>
-                  <p>靈感箱，照著做就好</p>
-                </div>
-                <span class="compare-feat-arrow"></span>
-              </div>
-              <div class="compare-feat-content">
-                <p>
-                  不知道要做什麼？打開「靈感箱」，裡面有大量現成範例。
-                  看到喜歡的，直接套用、改成你要的，新手也能立刻產出專業成果。
-                  不用從一張白紙開始。
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="" class="btn btn-fill btn-fill-white">
-            <span class="btn-text">立即免費體驗</span>
-            <span class="icon-arrow-right btn-icon"></span>
-          </a>
+          <img class="pain-mascot" src="./public/img/01.png" alt="">
         </div>
       </div>
       <div class="beforeafter">
         <div class="container">
-          <div class="beforeafter-cards beforeafter-cards--left" data-aos="fade-right">
+          <div
+            class="beforeafter-cards beforeafter-cards--left"
+            data-aos="fade-right"
+          >
             <div class="beforeafter-card">
               <div class="beforeafter-card-title">
                 <img src="./public/img/video.svg" alt="" />
@@ -504,7 +525,6 @@
                       <ul>
                         <li>自己做完</li>
                         <li>半天完成</li>
-                        <li>只要少許點數</li>
                       </ul>
                     </div>
                   </div>
@@ -514,7 +534,7 @@
             <div class="beforeafter-card">
               <div class="beforeafter-card-title">
                 <img src="./public/img/talk.svg" alt="" />
-                <h3>數字人口播影片</h3>
+                <h3>數字人口播</h3>
               </div>
               <div class="beforeafter-card-content">
                 <div class="row">
@@ -524,7 +544,6 @@
                       <ul>
                         <li>要露臉</li>
                         <li>要請人</li>
-                        <li>要對腳本</li>
                       </ul>
                     </div>
                   </div>
@@ -532,9 +551,34 @@
                     <div class="beforeafter-list list-after">
                       <p>現在</p>
                       <ul>
-                        <li>不用露臉</li>
-                        <li>不用請人</li>
                         <li>打字即可產出</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="beforeafter-card">
+              <div class="beforeafter-card-title">
+                <img src="./public/img/model.svg" alt="" />
+                <h3>模特兒試穿</h3>
+              </div>
+              <div class="beforeafter-card-content">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="beforeafter-list list-before">
+                      <p>以前</p>
+                      <ul>
+                        <li>找模特兒</li>
+                        <li>拍攝</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="beforeafter-list list-after">
+                      <p>現在</p>
+                      <ul>
+                        <li>一張照片換裝</li>
                       </ul>
                     </div>
                   </div>
@@ -544,7 +588,9 @@
           </div>
           <div class="beforeafter-hero">
             <h2 class="title mb-lg-1 mb-2">同樣一件事</h2>
-            <div class="beforeafter-hero__vs d-flex align-items-center justify-content-center gap-lg-3 gap-2">
+            <div
+              class="beforeafter-hero__vs d-flex align-items-center justify-content-center gap-lg-3 gap-2"
+            >
               <h2 class="title before">以前</h2>
               <p class="title vs">VS</p>
               <h2 class="title after">用了 Waigo</h2>
@@ -553,7 +599,10 @@
               做內容本來該很單純。<br />累的不是創意，是工具跟帳單。
             </p>
           </div>
-          <div class="beforeafter-cards beforeafter-cards--right" data-aos="fade-left">
+          <div
+            class="beforeafter-cards beforeafter-cards--right"
+            data-aos="fade-left"
+          >
             <div class="beforeafter-card">
               <div class="beforeafter-card-title">
                 <img src="./public/img/camera.svg" alt="" />
@@ -567,7 +616,6 @@
                       <ul>
                         <li>請攝影師</li>
                         <li>租場地</li>
-                        <li>一組好幾千</li>
                       </ul>
                     </div>
                   </div>
@@ -576,7 +624,6 @@
                       <p>現在</p>
                       <ul>
                         <li>自己生</li>
-                        <li>一張只要幾塊錢</li>
                         <li>想換就換</li>
                       </ul>
                     </div>
@@ -587,7 +634,7 @@
             <div class="beforeafter-card">
               <div class="beforeafter-card-title">
                 <img src="./public/img/advertisement.svg" alt="" />
-                <h3>能投廣告的短影音</h3>
+                <h3>廣告素材多語版</h3>
               </div>
               <div class="beforeafter-card-content">
                 <div class="row">
@@ -595,8 +642,7 @@
                     <div class="beforeafter-list list-before">
                       <p>以前</p>
                       <ul>
-                        <li>不會剪輯</li>
-                        <li>只能放棄或外包</li>
+                        <li>重做一輪</li>
                       </ul>
                     </div>
                   </div>
@@ -604,14 +650,119 @@
                     <div class="beforeafter-list list-after">
                       <p>現在</p>
                       <ul>
-                        <li>套靈感箱範例</li>
-                        <li>新手也做得出來</li>
+                        <li>只換文字</li>
+                        <li>版面不動</li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="beforeafter-card">
+              <div class="beforeafter-card-title">
+                <img src="./public/img/auto.svg" alt="" />
+                <h3>老照片修復</h3>
+              </div>
+              <div class="beforeafter-card-content">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="beforeafter-list list-before">
+                      <p>以前</p>
+                      <ul>
+                        <li>送店家</li>
+                        <li>等一週</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="beforeafter-list list-after">
+                      <p>現在</p>
+                      <ul>
+                        <li>幾分鐘</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare" id="solution">
+        <div class="compare-wrapper">
+          <h2 class="title">一個帳號，<br class="d-lg-none" />解決所有麻煩</h2>
+          <div class="compare-inner container" data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="compare-feat">
+                    <div class="compare-feat-img">
+                      <img src="./public/img/pay.png" alt="" />
+                    </div>
+                    <div class="compare-feat-text">
+                      <span>好處一</span>
+                      <p>不用再為了不同模型，<br>到處訂閱</p>
+                      <div class="compare-feat-content">
+                        <ul>
+                          <li>一套點數用遍 <strong>100+ 工具、300+ 子功能</strong>：圖片、影片、配音、數位人、修復放大</li>
+                          <li><strong>點數永不過期，不會自動扣款</strong>——想用才買</li>
+                          <li>Midjourney US$$30 ＋ Runway US$$35 ＋ ElevenLabs US$$22 ＋ HeyGen US$$49，每個月固定噴出去；<strong>Waigo 是用多少付多少</strong></li>
+                        </ul>
+                        <a href="" class="btn btn-border btn-border-white">看點數方案</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="compare-feat">
+                    <div class="compare-feat-img">
+                      <img src="./public/img/idea.jpg" alt="" />
+                    </div>
+                    <div class="compare-feat-text">
+                      <span>好處二</span>
+                      <p>不用從一張白紙開始：<br>靈感區 × 應用區</p>
+                      <div class="compare-feat-content">
+                        <ul>
+                          <li><strong>靈感廣場 196 組現成範本</strong>：挑一個、換成你的圖和你的字，按生成就有成品</li>
+                          <li><strong>應用案例照行業分</strong>：鞋子上腳影片、菜單情境照、房仲帶看影片、寵物爆款短片……每一個都可以「做同款」</li>
+                          <li>這是我們跟單一模型網站最大的差別：<strong>他們給你一個輸入框，我們給你做法</strong></li>
+                        </ul>
+                        <a href="" class="btn btn-border btn-border-white">逛靈感廣場</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="compare-feat">
+                    <div class="compare-feat-img">
+                      <img src="./public/img/integrate.jpg" alt="" />
+                    </div>
+                    <div class="compare-feat-text">
+                      <span>好處三</span>
+                      <p>不是通用工具，<br>是可以變成「你自己的」</p>
+                      <div class="compare-feat-content">
+                        <ul>
+                          <li><strong>行業專屬工具包</strong>：餐飲、婚紗、美髮、電商各有自己的私房工具，不是通用模型套殼</li>
+                          <li><strong>你的角色、你的聲音、你的資產可以存起來重複使用</strong>：AI 角色誕生、角色攝影棚、數位資產工坊、AI 聲音複製</li>
+                          <li><strong>進階可以自己組流程</strong>：Space 畫布串接多個工具；企業方案可做 API 串接，接進自己的系統或 Claude／ChatGPT</li>
+                        </ul>
+                        <a href="" class="btn btn-border btn-border-white">看客製化與企業方案</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="beer-slider" class="beer-slider" data-beer-label="before">
+              <img
+                src="./public/img/man-hold-beer.jpg"
+                alt="Original - Man holding beer"
+              />
+              <div class="beer-reveal" data-beer-label="after">
+                <img
+                  src="./public/img/man-hold-beer-after1logo.jpg"
+                  alt="Processed - Man holding beer"
+                />
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -626,75 +777,48 @@
             <div class="col-lg-3 col-6">
               <a href="" class="cards_item" data-aos="fade-up">
                 <div class="cards_pic">
-                  <video>
-                    <source src="./public/img/example.mp4" />
+                  <video autoplay muted loop playsinline>
+                    <source src="./public/img/example.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="cards_text">
                   <h3 class="cards_title">極致人像生成</h3>
-                  <div class="cards_arrow">
-                    <span class="icon-arrow-right"></span>
-                  </div>
                 </div>
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a
-                href=""
-                class="cards_item"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="100">
                 <div class="cards_pic">
-                  <video>
-                    <source src="./public/img/example.mp4" />
+                  <video autoplay muted loop playsinline>
+                    <source src="./public/img/example.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="cards_text">
                   <h3 class="cards_title">電影級動態影像</h3>
-                  <div class="cards_arrow">
-                    <span class="icon-arrow-right"></span>
-                  </div>
                 </div>
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a
-                href=""
-                class="cards_item"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
+              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="200">
                 <div class="cards_pic">
-                  <video>
-                    <source src="./public/img/example.mp4" />
+                  <video autoplay muted loop playsinline>
+                    <source src="./public/img/example.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="cards_text">
                   <h3 class="cards_title">超現實藝術創作</h3>
-                  <div class="cards_arrow">
-                    <span class="icon-arrow-right"></span>
-                  </div>
                 </div>
               </a>
             </div>
             <div class="col-lg-3 col-6">
-              <a
-                href=""
-                class="cards_item"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <a href="" class="cards_item" data-aos="fade-up" data-aos-delay="100">
                 <div class="cards_pic">
-                  <video>
-                    <source src="./public/img/example.mp4" />
+                  <video autoplay muted loop playsinline>
+                    <source src="./public/img/example.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="cards_text">
                   <h3 class="cards_title">未來科技概念</h3>
-                  <div class="cards_arrow">
-                    <span class="icon-arrow-right"></span>
-                  </div>
                 </div>
               </a>
             </div>
@@ -711,135 +835,170 @@
           <p class="description">
             從基礎編輯到頂尖生成模型，Waigo 為您準備好了所有必要工具。
           </p>
-          <nav class="tool-tab">
-            <div class="tool-tab-active">
-              <p>所有工具</p>
-              <img src="./public/img/select-arrow.svg" alt="" />
+          <div class="row">
+            <div class="col-lg-6">
+              <nav class="tool-tab">
+                <div class="tool-tab-active">
+                  <p>所有工具</p>
+                  <img src="./public/img/select-arrow.svg" alt="" />
+                </div>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-all-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-all"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-all"
+                    aria-selected="true"
+                  >
+                    所有工具
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-2-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-2"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-2"
+                    aria-selected="false"
+                  >
+                    圖片
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-3-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-3"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-3"
+                    aria-selected="false"
+                  >
+                    影片
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-4-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-4"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-4"
+                    aria-selected="false"
+                  >
+                    聲音
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-5-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-5"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-5"
+                    aria-selected="false"
+                  >
+                    文字・提示詞
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-6-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-6"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-6"
+                    aria-selected="false"
+                  >
+                    人物・數位人
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tool-7-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tool-7"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tool-7"
+                    aria-selected="false"
+                  >
+                    修復放大
+                  </button>
+                </div>
+              </nav>
             </div>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button
-                class="nav-link active"
-                id="nav-all-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-all"
-                type="button"
-                role="tab"
-                aria-controls="nav-all"
-                aria-selected="true"
-              >
-                所有工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-2-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-2"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-2"
-                aria-selected="false"
-              >
-                圖片創作工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-3-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-3"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-3"
-                aria-selected="false"
-              >
-                影片創作工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-4-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-4"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-4"
-                aria-selected="false"
-              >
-                聲音創作工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-5-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-5"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-5"
-                aria-selected="false"
-              >
-                影像優化工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-6-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-6"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-6"
-                aria-selected="false"
-              >
-                電商老闆 最愛工具
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-7-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-7"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-7"
-                aria-selected="false"
-              >
-                數字人專區
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-9-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-9"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-9"
-                aria-selected="false"
-              >
-                日常應用AI
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-10-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-10"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-10"
-                aria-selected="false"
-              >
-                社群媒體
-              </button>
-              <button
-                class="nav-link"
-                id="nav-tool-11-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-tool-11"
-                type="button"
-                role="tab"
-                aria-controls="nav-tool-11"
-                aria-selected="false"
-              >
-                短影音助手
-              </button>
+            <div class="col-lg-6">
+              <div class="tool-search">
+                <select class="tool-search-select">
+                  <option value="">全部廠牌</option>
+                  <option value="ByteDance">ByteDance</option>
+                  <option value="Google">Google</option>
+                  <option value="OpenAI">OpenAI</option>
+                  <option value="Kling">Kling 可靈</option>
+                  <option value="MiniMax">MiniMax 海螺</option>
+                  <option value="Alibaba">阿里 Qwen・Wan</option>
+                  <option value="Black Forest Labs">
+                    Black Forest Labs（FLUX）
+                  </option>
+                  <option value="ElevenLabs">ElevenLabs</option>
+                  <option value="Runway">Runway</option>
+                  <option value="Suno">Suno</option>
+                  <option value="Midjourney">Midjourney</option>
+                  <option value="Topaz">Topaz</option>
+                  <option value="PixVerse">PixVerse</option>
+                  <option value="Vidu">Vidu</option>
+                  <option value="LTX">LTX</option>
+                  <option value="Grok">Grok</option>
+                  <option value="Ideogram">Ideogram</option>
+                  <option value="Recraft">Recraft</option>
+                  <option value="Anthropic">Anthropic</option>
+                </select>
+                <div class="tool-search-input-wrapper">
+                  <svg
+                    class="tool-search-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#a7b0b9"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                  <input
+                    type="text"
+                    class="tool-search-input"
+                    placeholder="請輸入工具名或模型名"
+                  />
+                </div>
+                <button class="tool-search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                  搜尋
+                </button>
+              </div>
             </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
+          </div>
+          <div class="tab-content mt-4" id="nav-tabContent">
             <div
               class="tab-pane fade show active"
               id="nav-all"
@@ -850,1016 +1009,281 @@
               <div class="swiper tool-content-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
+                        </div>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
                           </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
                           </div>
-                        </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
-                        </div>
-                      </div>
-                      <img
-                        class="tool-bg"
-                        src="./public/img/tool-img.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
-                      </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
-                          </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
-                          </div>
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                      </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
-                      </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
-                        </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a
-                      class="tool-card-body p-4 d-flex flex-column flex-grow-1"
-                    >
-                      <div
-                        class="tool-card-brand-badges position-absolute d-flex flex-column align-items-end gap-1"
-                      >
-                        <span
-                          class="badge-brand badge rounded-pill px-2 text-truncate"
-                          >ByteDance</span
-                        >
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <div
-                        class="tool-card-row tool-card-title mb-2 d-flex align-items-start"
-                      >
-                        <div class="d-flex align-items-center flex-grow-1">
-                          <div
-                            class="tool-icon rounded-3 bg-white p-1 shadow-sm"
-                          >
-                            <img
-                              src="https://waigo.ai/assets/img/default-tool-icon.png?v=1.2"
-                              alt="AI 生圖 Seedream 5.0 Pro"
-                              height="28"
-                            />
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
+                        </div>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
                           </div>
-                          <div
-                            class="tool-title fw-bold text-decoration-none text-blue4 fs-5"
-                          >
-                            AI 生圖 Seedream 5.0 Pro
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
                           </div>
                         </div>
                       </div>
-                      <!-- 第二行：描述 -->
-                      <div
-                        class="tool-card-row tool-card-desc desc flex-grow-1 mt-2"
-                      >
-                        <p class="tool-card-desc-text text-blue3">
-                          BytePlus Seedream 5.0 Pro
-                          頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10
-                          張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。
-                        </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="tool-card">
+                      <div class="tool-card-img">
+                        <img src="./public/img/tool-img.png" alt="" />
+                        <span class="tool-card-brand">ByteDance</span>
                       </div>
-                      <!-- 第三行：子功能分類 + NEW + 點數 -->
-                      <div
-                        class="tool-card-row tool-card-bottom mt-3 d-flex justify-content-between align-items-end gap-2"
-                      >
-                        <div
-                          class="tool-card-tags d-flex gap-1 flex-nowrap overflow-hidden"
-                        >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >圖片編輯</span
-                          >
-                          <span
-                            class="badge-category badge rounded-pill px-2 py-1 text-truncate"
-                            >文字轉圖片</span
-                          >
+                      <div class="tool-card-info">
+                        <p class="tool-card-name">AI 生圖 Seedream 5.0 Pro</p>
+                        <div class="tool-card-desc-wrap">
+                          <p class="tool-card-short">頂級生圖，文字生圖・圖生圖・多圖融合。</p>
+                          <p class="tool-card-full">BytePlus Seedream 5.0 Pro 頂級生圖模型。文字生圖、圖生圖編輯、多圖融合（最多 10 張參考圖），可控細節、局部修改、換色換材質，畫質細膩、性價比高。</p>
                         </div>
-                        <div
-                          class="d-flex align-items-center gap-2 flex-shrink-0"
-                        >
-                          <span class="badge text-white bg-yellow2 px-2 py-1"
-                            >NEW</span
-                          >
-                          <span
-                            class="badge bg-blue2 d-inline-flex align-items-center gap-1 px-2 py-1"
-                          >
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 16 15"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"
-                                fill="white"
-                              ></path>
-                              <path
-                                d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"
-                                fill="white"
-                              ></path>
-                            </svg>
-                            Free
-                          </span>
+                        <div class="tool-card-footer">
+                          <div class="tool-card-tags">
+                            <span class="badge-category">圖片編輯</span>
+                            <span class="badge-category">文字轉圖片</span>
+                          </div>
+                          <div class="tool-card-meta">
+                            <span class="badge-new">NEW</span>
+                            <span class="badge-points">
+                              <svg width="12" height="12" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.51642 4.45123C8.46842 4.45123 10.6744 3.28424 10.6744 2.24124C10.6744 1.19824 8.46842 0.03125 5.51642 0.03125C2.56442 0.03125 0.358398 1.19824 0.358398 2.24124C0.358398 3.28424 2.56442 4.45123 5.51642 4.45123Z"/><path d="M5.51642 13.2932C5.94742 13.2932 6.36241 13.2681 6.75641 13.2221C6.42341 12.7951 6.14942 12.3202 5.94342 11.8112C5.80142 11.8162 5.65942 11.8192 5.51642 11.8192C3.82942 11.8192 2.23243 11.4851 1.01843 10.8781C0.779433 10.7591 0.559398 10.6301 0.358398 10.4941V11.0822C0.358398 12.1252 2.56442 13.2921 5.51642 13.2921V13.2932Z"/><path d="M5.51642 10.3449C5.53142 10.3449 5.5464 10.3449 5.5614 10.3449C5.5314 10.1029 5.51544 9.85691 5.51544 9.60791C5.51544 9.35891 5.5314 9.11291 5.5614 8.87091C5.5464 8.87091 5.53142 8.87091 5.51642 8.87091C3.82942 8.87091 2.23243 8.5369 1.01843 7.9299C0.779433 7.8109 0.559398 7.6819 0.358398 7.5459V8.13391C0.358398 9.17691 2.56442 10.3439 5.51642 10.3439V10.3449Z"/><path d="M5.51636 7.39862C5.66236 7.39862 5.80634 7.39562 5.94934 7.38962C6.17834 6.82862 6.49038 6.30962 6.87238 5.85062C6.43138 5.89962 5.9774 5.92462 5.5174 5.92462C3.83039 5.92462 2.23335 5.59061 1.01935 4.98361C0.780348 4.86361 0.560375 4.73561 0.359375 4.59961V5.18762C0.359375 6.23062 2.5654 7.39761 5.5174 7.39761L5.51636 7.39862Z"/><path d="M7.72723 7.1655C7.40823 7.6445 7.18024 8.18948 7.06824 8.77548C7.01624 9.04548 6.98926 9.32349 6.98926 9.60849C6.98926 9.82249 7.00524 10.0335 7.03424 10.2395C7.10724 10.7455 7.26526 11.2245 7.49426 11.6605C7.73526 12.1175 8.05327 12.5285 8.43127 12.8745C9.21727 13.5925 10.2632 14.0315 11.4102 14.0315C13.8482 14.0315 15.8322 12.0475 15.8322 9.6095C15.8322 7.1715 13.8482 5.1875 11.4102 5.1875C11.1582 5.1875 10.9112 5.20948 10.6702 5.24948C9.44423 5.45648 8.38926 6.17047 7.72626 7.16647L7.72723 7.1655Z"/></svg>
+                              Free
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </a>
@@ -1987,11 +1411,11 @@
               畫布給你一塊自由的創作空間——把生成的圖片、影片、素材通通擺進來，自由編排、組合、接著做。從零散素材到完整作品，都在同一個畫面完成。
             </p>
             <img
-            class="space-pic d-lg-none"
-            src="./public/img/space.png"
-            alt=""
-            data-aos="fade-down"
-          />
+              class="space-pic d-lg-none"
+              src="./public/img/space.png"
+              alt=""
+              data-aos="fade-down"
+            />
             <a href="" class="btn btn-fill">
               <span class="btn-text">立即免費體驗</span>
               <span class="icon-arrow-right btn-icon"></span>
@@ -2018,7 +1442,7 @@
                   <div class="col-lg-4 col-6">
                     <div class="calculate-checkbox">
                       <div class="calculate-checkbox__input">
-                        <input type="checkbox" id="midjourney" />
+                        <input type="checkbox" id="midjourney" checked />
                         <div class="checkmark">
                           <img src="./public/img/check.svg" alt="" />
                         </div>
@@ -2032,7 +1456,7 @@
                   <div class="col-lg-4 col-6">
                     <div class="calculate-checkbox">
                       <div class="calculate-checkbox__input">
-                        <input type="checkbox" id="runway" />
+                        <input type="checkbox" id="runway" checked />
                         <div class="checkmark">
                           <img src="./public/img/check.svg" alt="" />
                         </div>
@@ -2046,7 +1470,7 @@
                   <div class="col-lg-4 col-6">
                     <div class="calculate-checkbox">
                       <div class="calculate-checkbox__input">
-                        <input type="checkbox" id="elevenlabs" />
+                        <input type="checkbox" id="elevenlabs" checked />
                         <div class="checkmark">
                           <img src="./public/img/check.svg" alt="" />
                         </div>
@@ -2161,81 +1585,53 @@
       </div>
       <div class="evaluate" id="feedback">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="rate">
-                <div class="rate-item">
-                  <h3><span id="user">1000</span>+</h3>
-                  <p>註冊戶</p>
-                </div>
+          <div class="evaluate-masonry" data-aos="fade-up">
+            <div class="masonry-grid">
+              <div class="masonry-sizer"></div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-1.png" alt="" />
               </div>
-              <div class="rate">
-                <div class="rate-item">
-                  <h3><span id="work">30000</span>+</h3>
-                  <p>生成內容</p>
-                </div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-2.png" alt="" />
               </div>
-              <div class="rate">
-                <div class="rate-item">
-                  <h3><span id="tool">50</span>+</h3>
-                  <p>整合工具</p>
-                </div>
+              <div class="masonry-item masonry-item--wider">
+                <img src="./public/img/card-img-3.png" alt="" />
+              </div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-4.png" alt="" />
+              </div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-1.png" alt="" />
+              </div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-2.png" alt="" />
+              </div>
+              <div class="masonry-item masonry-item--wider">
+                <img src="./public/img/cta.png" alt="" />
+              </div>
+              <div class="masonry-item">
+                <img src="./public/img/card-img-3.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="testimonial">
-                <h2 class="title">聽聽創作者怎麼說</h2>
-                <div class="swiper-container testimonial-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <p class="testimonial-item__text">
-                          「以前一支影片外包要等一週、花好幾千。現在自己一個下午做完，省下的外包費直接打平點數。」
-                        </p>
-                        <div class="testimonial-person">
-                          <div class="testimonial-person__text">
-                            <h3>王小明</h3>
-                            <p>自媒體經營者</p>
-                          </div>
-                          <div class="testimonial-person__img">
-                            <img src="./public/img/photo-1.jpg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <p class="testimonial-item__text">
-                          「我開餐廳的，平台居然有餐飲專屬工具，菜單圖、宣傳影片自己做，省下一筆設計費。」
-                        </p>
-                        <div class="testimonial-person">
-                          <div class="testimonial-person__text">
-                            <h3>陳艾莉</h3>
-                            <p>餐飲業老闆</p>
-                          </div>
-                          <div class="testimonial-person__img">
-                            <img src="./public/img/photo-2.jpg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <p class="testimonial-item__text">
-                          「最怕白紙一張不知道做什麼，靈感箱直接給範例，照著改就好，超適合新手。」
-                        </p>
-                        <div class="testimonial-person">
-                          <div class="testimonial-person__text">
-                            <h3>李大維</h3>
-                            <p>電商賣家</p>
-                          </div>
-                          <div class="testimonial-person__img">
-                            <img src="./public/img/photo-3.jpg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+          <div class="evaluate-rate" data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="rate-item">
+                  <h3><span id="community">120000</span>+</h3>
+                  <p>社群人數</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="rate-item">
+                  <h3><span id="weekly">1200</span>+</h3>
+                  <p>本週新增</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="rate-item">
+                  <h3><span id="total">500000</span>+</h3>
+                  <p>累計生成數</p>
                 </div>
               </div>
             </div>
@@ -2247,9 +1643,9 @@
           <div class="cta-wrapper">
             <div class="row justify-content-end">
               <div class="col-md-6">
-                <h2 data-aos="fade-up">今天就開始<br>做出你的第一支作品</h2>
+                <h2 data-aos="fade-up">今天就開始<br />做出你的第一支作品</h2>
                 <p data-aos="fade-up" data-aos-delay="100">
-                  加入 50,000+ 創業者與創作者，用最簡單的方式，把想法變成成品。
+                  免綁卡，先做做看再決定
                 </p>
                 <a href="" class="btn btn-fill">
                   <span class="btn-text">免費開始創作</span>
@@ -2258,36 +1654,149 @@
               </div>
             </div>
           </div>
+          <img class="cta-mascot" src="./public/img/c69b091c-f339-43ce-9905-bf32d6fa47aa.png" alt="">
         </div>
       </div>
     </main>
 
     <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-      <div class="video-modal__overlay"></div>
-      <div class="video-modal__inner">
-        <button class="video-modal__close" aria-label="關閉">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <line x1="4" y1="4" x2="20" y2="20" />
-            <line x1="20" y1="4" x2="4" y2="20" />
-          </svg>
-        </button>
-        <video class="video-modal__video" controls playsinline>
-          <source src="" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-
     <footer class="footer">
-      <p>© 2025 WEDO Studio Design. All Rights Reserved.</p>
-      <ul>
-        <li><a href="">隱私權政策</a></li>
-        <li><a href="">使用者條款</a></li>
-        <li><a href="">Cookie Settings</a></li>
-      </ul>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                  <img src="./public/img/logo.svg" alt="Waigo AI" />
+                </a>
+                <p class="footer-company">維度行銷設計</p>
+                <p class="footer-tax">統一編號：00030459</p>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-service">
+                <a href="#" class="footer-service-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.07 9.436-6.975C23.176 14.393 24 12.458 24 10.314"
+                    />
+                  </svg>
+                  加入 LINE 線上客服
+                </a>
+                <a href="mailto:service@wedo1.tw" class="footer-service-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  service@wedo1.tw
+                </a>
+                <p class="footer-service-hours">
+                  回覆時間：週一至週五 09:00–18:00
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex flex-column">
+                <div class="footer-social order-lg-1 order-2">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                          <circle cx="9" cy="7" r="4" />
+                          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-links order-lg-2 order-1">
+                  <ul class="d-flex flex-wrap gap-lg-4">
+                    <li><a href="https://waigo.ai/tools">AI 工具集</a></li>
+                    <li><a href="https://waigo.ai/inspiration">靈感廣場</a></li>
+                    <li><a href="#">AI 學院</a></li>
+                    <li><a href="#">使用攻略</a></li>
+                    <li><a href="#">企業方案</a></li>
+                    <li><a href="#">API 串接</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2025 WEDO Studio Design. All Rights Reserved.</p>
+          <ul>
+            <li><a href="">隱私權政策</a></li>
+            <li><a href="">使用者條款</a></li>
+            <li><a href="">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
@@ -2328,11 +1837,11 @@
       new Waypoint({
         element: document.querySelector(".rate"),
         handler: function () {
-          var numAnim1 = new countUp.CountUp("user", 1000, options1);
+          var numAnim1 = new countUp.CountUp("community", 50000, options1);
           numAnim1.start();
-          var numAnim2 = new countUp.CountUp("work", 30000, options2);
+          var numAnim2 = new countUp.CountUp("weekly", 30000, options2);
           numAnim2.start();
-          var numAnim3 = new countUp.CountUp("tool", 50, options3);
+          var numAnim3 = new countUp.CountUp("total", 100, options3);
           numAnim3.start();
         },
         offset: "80%",
@@ -2351,9 +1860,9 @@
     </script>
     <script>
       var toolSwiper = new Swiper(".tool-content-swiper", {
-        slidesPerView: 1,
+        slidesPerView: 2,
         grid: {
-          rows: 4,
+          rows: 2,
           fill: "row",
         },
         spaceBetween: 16,
@@ -2367,9 +1876,9 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             grid: {
-              rows: 3,
+              rows: 2,
               fill: "row",
             },
             spaceBetween: 20,
@@ -2379,54 +1888,16 @@
     </script>
     <script>
       (function () {
-        var modal = document.getElementById("videoModal");
-        var modalVideo = modal.querySelector(".video-modal__video");
-        var modalSource = modalVideo.querySelector("source");
-
-        function openModal(src) {
-          modalSource.setAttribute("src", src);
-          modalVideo.load();
-          modal.classList.add("is-open");
-          modalVideo.play();
-        }
-
-        function closeModal() {
-          modal.classList.remove("is-open");
-          modalVideo.pause();
-          modalVideo.currentTime = 0;
-          modalSource.setAttribute("src", "");
-        }
-
-        document.querySelectorAll(".cards_item").forEach(function (card) {
-          card.addEventListener("click", function (e) {
-            e.preventDefault();
-            var src = card.querySelector("source").getAttribute("src");
-            openModal(src);
-          });
-        });
-
-        modal
-          .querySelector(".video-modal__overlay")
-          .addEventListener("click", closeModal);
-        modal
-          .querySelector(".video-modal__close")
-          .addEventListener("click", closeModal);
-
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape") closeModal();
-        });
-      })();
-    </script>
-    <script>
-      (function () {
         var mq = window.matchMedia("(max-width: 991px)");
-        document.querySelectorAll(".compare-feat-head").forEach(function (head) {
-          head.addEventListener("click", function () {
-            if (!mq.matches) return;
-            var feat = head.closest(".compare-feat");
-            feat.classList.toggle("is-open");
+        document
+          .querySelectorAll(".compare-feat-head")
+          .forEach(function (head) {
+            head.addEventListener("click", function () {
+              if (!mq.matches) return;
+              var feat = head.closest(".compare-feat");
+              feat.classList.toggle("is-open");
+            });
           });
-        });
       })();
     </script>
   </body>

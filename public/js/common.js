@@ -7,6 +7,78 @@ $(".header__menu").click(function () {
   $(".header__nav").toggleClass("active");
 });
 
+// Hero video swiper
+(function () {
+  var heroVideoMuted = false;
+  var heroVideoSwiper;
+
+  function getActiveVideo() {
+    var slide = document.querySelector(".hero-video-swiper .swiper-slide-active");
+    return slide ? slide.querySelector("video") : null;
+  }
+
+  function stopAllVideos() {
+    document.querySelectorAll(".hero-video-swiper video").forEach(function (v) {
+      v.pause();
+      v.currentTime = 0;
+      v.muted = true;
+      v.onended = null;
+    });
+  }
+
+  function updateMuteBtn() {
+    var iconMuted = document.querySelector(".hero-video-mute .icon-muted");
+    var iconUnmuted = document.querySelector(".hero-video-mute .icon-unmuted");
+    if (iconMuted) iconMuted.style.display = heroVideoMuted ? "" : "none";
+    if (iconUnmuted) iconUnmuted.style.display = heroVideoMuted ? "none" : "";
+  }
+
+  function playActive() {
+    stopAllVideos();
+    var video = getActiveVideo();
+    if (!video) return;
+    video.muted = heroVideoMuted;
+    var p = video.play();
+    if (p !== undefined) {
+      p.catch(function () {
+        video.muted = true;
+        heroVideoMuted = true;
+        updateMuteBtn();
+        video.play();
+      });
+    }
+    video.onended = function () {
+      heroVideoSwiper.slideNext();
+    };
+  }
+
+  heroVideoSwiper = new Swiper(".hero-video-swiper", {
+    loop: true,
+    allowTouchMove: true,
+    pagination: {
+      el: ".hero-video-pagination",
+      clickable: true,
+    },
+    on: {
+      slideChangeTransitionEnd: function () {
+        playActive();
+      },
+    },
+  });
+
+  playActive();
+
+  var muteBtn = document.querySelector(".hero-video-mute");
+  if (muteBtn) {
+    muteBtn.addEventListener("click", function () {
+      heroVideoMuted = !heroVideoMuted;
+      updateMuteBtn();
+      var video = getActiveVideo();
+      if (video) video.muted = heroVideoMuted;
+    });
+  }
+})();
+
 var swiper = new Swiper(".gallery-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -46,9 +118,8 @@ $(".tool-tab .nav-link").click(function () {
   }
 });
 
-$(".calculate-checkbox input").on("change", function () {
+function updateCalculate() {
   let monthlyPrice = 0;
-  let yearlyPrice = 0;
   $(".calculate-wrapper input").each(function () {
     if ($(this).is(":checked")) {
       let price = parseInt(
@@ -57,15 +128,30 @@ $(".calculate-checkbox input").on("change", function () {
       monthlyPrice = monthlyPrice + price;
     }
   });
-  yearlyPrice = monthlyPrice * 12;
   $(".save-monthly").text(monthlyPrice);
-  $(".save-yearly").text(yearlyPrice);
-});
+  $(".save-yearly").text(monthlyPrice * 12);
+}
+
+$(".calculate-checkbox input").on("change", updateCalculate);
+updateCalculate();
 
 resize();
 $(window).on("resize scroll", function () {
   resize();
 });
+
+// Masonry gallery
+var $masonryGrid = $(".masonry-grid");
+if ($masonryGrid.length) {
+  $masonryGrid.imagesLoaded(function () {
+    $masonryGrid.masonry({
+      itemSelector: ".masonry-item",
+      columnWidth: ".masonry-sizer",
+      percentPosition: true,
+      gutter: 12,
+    });
+  });
+}
 
 function resize() {
   // header
